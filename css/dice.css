@@ -1,0 +1,376 @@
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////  ICED 2.0  ////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////// */
+* {
+	/* border: 1px solid red !important; */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:0;
+	margin: 0;
+}
+
+body {
+	color: #fff;
+	text-align:center;
+	background-image:url(http://freedomreply.com/wp-content/uploads/2014/06/background-images-for-web-design-3.jpg);
+	background-size: cover;
+	font-family: 'Teko', sans-serif;
+	font-size: 1.05em;
+	/* font-weight: 300; */
+	height: 100vh;
+	text-transform:uppercase;
+	overflow: auto;
+}
+.grid {
+	margin: 0 auto;
+	width: 1000px;
+	/* max-width: 1000px; */
+	/* width: 100%; */
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* background-color: rgba(0,105,140,0.5); */
+	box-shadow: inset 1px 1px 1px #00416280, 3px 4px 0px #004162CC;
+	overflow: hidden;
+	border: 1px solid rgba(6,77,98,0.2);
+	border-radius: 20px;
+	background-image: linear-gradient(rgba(0,74,179,0.2),
+	rgba(0,134,179,0.9), rgba(0,140,140,0.2)), url(../img/ice.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap:wrap;
+}
+.col-1 {width: 8.33%;}.col-2 {width: 16.66%;}.col-3 {width: 25%;}
+.col-4{width: 33.33%;}.col-5 {width: 41.66%;}.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}.col-8 {width: 66.66%;}.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}.col-11 {width: 91.66%;}.col-12 {width: 100%;}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////  PLAYER'S PADS  ///////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+.player-pad-0, .player-pad-2, .player-pad-1, .player-pad-3 {
+	 /* position: relative; */
+	min-width:410px;
+	max-width:410px;
+	max-height:140px;
+	padding:15px 10px 15px 10px;
+	margin: auto;
+	border: 2px solid rgba(0,1,2,0.3);
+	border-radius:15px;
+	box-shadow: inset 0px 1px 0px #4ca6ff , 3px 5px 0px rgba(0, 65, 87, 0.9);
+	background-image: linear-gradient(rgba(0,74,179,0.6), rgba(0,140,140,0.6));
+	/* background-color: rgba(0,140,140,0.6); */
+}
+
+.topPlayers, .botPlayers {
+	min-height:220px;
+	padding:30px 0 30px 0;
+	/* background-color:rgba(163,0,217,0.9); */
+}
+.left-Player, .right-Player {
+	height:160px;
+	/* background-color:rgba(163,0,217,0.9); */
+}
+
+img {
+	height: 70px;
+	padding:0 2px 0 2px;
+}
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////  GAME TABLE  //////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+.game-table {
+	padding: 20px 0 20px 0; 
+	height:290px;
+	background-image: linear-gradient(rgba(40, 119, 0, 0.2), rgba(0, 242, 115, 0.2));
+	border: 2px solid rgba(0,1,2,0.3);
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(242,225,242,0.4);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(242,225,242,0.4);
+	box-shadow: 0px 0px 5px 1px rgba(242,225,242,0.4); 
+	box-shadow: 1px 1px 1px #baf0ff;
+	/* background-color:rgba(0,89,179,0.6); */
+}
+
+.game-table-dice {
+	margin: auto;
+	padding-top: 30px;
+	height: 180px;
+	/* background-color: #d2ff4c; */
+	width: auto;
+}
+
+.mainDicePad {
+	margin: auto;
+	padding-left:5px; 
+	height: auto;
+	/* margin-top: 20px; */
+	width: AUTO;
+	/* background-color: rgba(255,115,220,0.7); */
+}
+
+.myDice{
+	/* margin:auto; */
+	margin-top:14px;
+	height:120px;
+	width:auto;
+	float:left;
+}
+
+.dice1,.dice2,.dice3,.dice4,.dice5{
+	 height:97%;
+}
+
+/* .dice1:hover, .dice2:hover, .dice3:hover, */
+/* .dice4:hover, .dice5:hover, .dice6:hover { */
+	/* height:97.5%; */
+	/* border-width: 2px; */
+/* } */
+
+.dice1:active,.dice2:active,.dice3:active,
+.dice4:active,.dice5:active,.dice6:active{
+	height:100%;
+	/* margin-left:16px; */
+	box-shadow: none;
+}
+
+.secondDicePad {
+	margin:auto;
+	/* background-color:#b32d00; */
+	height:auto;
+	/* margin-top:20px; */
+	width:726px;
+	/* background-color:rgba(255,115,220,0.7); */
+}
+
+.handSet {
+	margin:auto;
+	margin-left:14px;
+	height:120px;
+	width:125px;
+	float:left;
+}
+
+.winHnd17,.winHnd27, .winHnd37, .winHnd47, .winHnd57 {
+	height:110%;
+	margin-left:15px;
+}
+
+.iceDicePad  {
+	margin:auto;
+	/* background-color:#b32d00; */
+	/* height:120px; */
+	margin-top: -30px;
+	width:400px;
+	/* background-color:rgba(255,115,220,0.7); */
+}
+
+.iceDicePad2 {
+    margin-top: 10px;
+}
+.diceDs{
+    margin:auto;
+    margin-left:15px;
+    height:90px;
+    width:90px;
+}
+ 
+.ice1, .ice2, .ice3, .ice4, .ice5, .ice6 {
+    height:97%;
+    margin:auto;
+}
+
+.ice1:hover, .ice2:hover, .ice3:hover,
+.ice4:hover, .ice5:hover, .ice6:hover {
+	height:96%;
+	margin:auto;
+	border-width: 2px;
+	box-shadow: -2px -1px 1px rgba(0,70,140,0.4);
+	border-radius:10px;
+}
+
+.ice1:active,.ice2:active,.ice3:active,
+.ice4:active,.ice5:active,.ice6:active{
+	height:92%;	box-shadow: none;
+}
+
+/* ////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////// */
+
+/* .myDice1, .myDice2, .myDice3{ */
+	/* margin:auto; */
+	/* width:140px; */
+	/* height:140px; */
+	/* margin:0 0px 0 27px; */
+	/* float:left; */
+/* } */
+/* .dice1, .dice2, .dice3, .dice4, .dice5{ */
+	/* height:110%; */
+	/* margin-left:15px; */
+/* } */
+
+/* ///////////////////////////////////////////////////////////// */
+/* ///////////////  SELECT DICE TABLE  //////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+
+
+/* margin:auto; */
+	/* margin-top:20px; */
+	/* height:140px; */
+	/* width:526px; */
+/* } */
+
+/* .myDice1, .myDice2, .myDice3{ */
+	/* margin:auto; */
+	/* width:140px; */
+	/* height:140px; */
+	/* margin:0 0px 0 27px; */
+	
+/* } */
+/* .dice1, .dice2, .dice3{ */
+	/* margin:auto; */
+	/* height:140px; */
+	/* /* margin:0 15px 0 15px; */
+/* } */
+
+
+
+/* ///////////////////////////////////////////////////////////// */
+/* /////////////////////   UTILITIES   //////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+
+.corePanel {
+	margin: auto;
+	height:50px;
+	width:400px;
+	/* background-color:rgba(217,54,0,0.7); */
+}
+
+.myButton {
+	margin: auto;
+}
+
+button {
+	background-color: #008dba;
+/* margin: 25px 15px -20px 15px; */
+position: relative;
+font-family: inherit;
+font-size: 25px;
+/* font-weight: 300; */
+/* text-decoration: none; */
+/* margin: 10px auto; */
+color: #e5e5e5;
+background-image: linear-gradient(bottom, rgb(0,105,140) 0%, rgb(64,255,160) 100%);
+box-shadow: inset 1px 1px 2px rgba(8,193,253,0.3) , 1px 5px 0px #03445D;
+border-radius: 5px;
+border-width: 1px;
+/* height: 30px; */
+padding-top:5px;
+         
+}
+
+button:active {
+    left:1px;
+    top:5px;
+    background-image: linear-gradient(bottom, rgb(0,191,255) 100%, rgb(64,255,160) 0%);
+    box-shadow: inset 1px 1px 1px #99ff99  , inset 0px -1px 0px #006968;
+    color: #99ff99;
+    text-shadow: 0px 1px 0px rgba(0,217,108,0.4);
+   border-width : 2px; 
+	 background: #008dba;
+}
+
+
+.btn-win  {
+	/* background-color: #bfffff; */
+	/* height: 40px; */
+	width: 200px;
+	margin: auto;
+	/* color: #007da5; */
+	font-size: 2em;
+	margin-top: 5px;
+}
+
+#print-win {
+	margin-top:-10px;
+	color: #ffffffe6;
+	text-shadow: 0 1px 0 #6e7f7f, 0 1px 0 #84a1a8, 0 1px 0 #9dadb5,
+	0 1px 0 #8697ad, 0 2px 0 #75889e, 0 3px 0px rgba(16, 74, 105, 0.47),
+	0 3px 1px rgba(5, 28, 110, 0.34);
+	font-size:50px;
+	margin-top: 5px;
+} 
+
+.btn-roll{	height:50px;	width:90px; margin-top:15px; margin-left: 100px;}
+.btn-keep{	height:50px;	width:90px;	margin-top:15px; margin-right: 106px; }
+
+.btn-init  {
+	background-color: #2d8eaa;
+	width: 90px;
+	margin-left: -50px;
+	color: #ffffffe6;
+	font-size: 1.6em;
+	margin-top: 10px;
+}
+
+input, input:focus, input:active {
+	outline:none !important;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////  VARIOUS  ACTIONS  ////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+.active {
+	position:relative;
+	top:4x;
+	background-color: rgba(38,255,92,0.6);
+	/* box-shadow: none; */
+	border: 2px solid rgba(0,1,2,0.3);
+	color:#99ffcc;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(242,225,242,0.4);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(242,225,242,0.4);
+	box-shadow: 0px 0px 5px 1px rgba(242,225,242,0.4); 
+	box-shadow: 1px 1px 1px #baf0ff;
+}
+
+.winner {
+	background-image: linear-gradient(rgba(0, 167, 208, 0.3), rgba(5, 0, 137, 0.33)), url(../img/ice.jpg);
+	background-size: cover;
+	/* background-position: center; */
+	/* border: 2 solid rgba(0,179,89,0.2); */
+	color: #fff;
+	font-size: 1.4em;
+	/* margin: 0px; */
+	padding: 0;
+	height: 160px;
+	/* color: #ffffffe6; */
+	text-shadow: 0 1px 0 #6e7f7f, 0 1px 0 #84a1a8, 0 1px 0 #9dadb5, 0 1px 0 #8697ad, 0 2px 0 #75889e, 0 3px 0px rgba(16, 74, 105, 0.47), 0 3px 1px rgba(5, 28, 110, 0.34);
+	/* font-size: 50px; */
+}
+/* @media only screen and (max-width: 870px) {} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

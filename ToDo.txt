@@ -1,0 +1,12 @@
+++It Should allow players to select dice from the pot.++
+++It should roll only dice=empty spots in the P's hand
+++It should allow an Ice to be rolled (1 max per player)
+++It should allow the player to choose ICE's value 
+++(at the end of their turn.) 
+++Optional- Either roll 5 d at once or as it is, 3 & 2. 
+++ make f of a kind the best hand
+// it should identify if a winnerr hand has a pair.
+++It should have a score to store and add up each P's hand. 
+//It shoud display P's scores besides their title.
+//It should allow P's to set no. of rolls, Score limit, 
+(v4 no. of players. new css and htm) 

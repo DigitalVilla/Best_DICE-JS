@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Teko:300,600"
+		rel="stylesheet"> 
+		<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+		rel="stylesheet"type="text/css">
+		<link type="text/css"rel="stylesheet"href="css/dice.css">
+
+		<title> ICED</title>
+	</head>
+	<body>
+		<div class="grid">			
+			<div class="topPlayers row">
+				<div class="left-Player col-6">
+					<div class="player-pad-0  col-12">
+						<div class="player-name col-12" id="name-0"><h2 class="playerLabel-0">Player 1</h2></div>
+						<img src="img/dice-1.png" alt="Dice" class="dice1-0">
+						<img src="img/dice-3.png" alt="Dice" class="dice2-0">
+						<img src="img/dice-2.png" alt="Dice" class="dice3-0">
+						<img src="img/dice-7.png" alt="Dice" class="dice4-0">
+						<img src="img/block.png" alt="Dice" class="dice5-0"> 
+					</div>   								  
+				</div>   								  
+				<div class="right-Player col-6">
+					<div class="player-pad-1 col-12">                                    
+					<div class="player-name" id="name-1"><h2 class="playerLabel-1">Player 2</h2></div>
+						<img src="img/dice-3.png" alt="Dice" class="dice1-1" >
+						<img src="img/dice-6.png" alt="Dice" class="dice2-1" >
+						<img src="img/dice-2.png" alt="Dice" class="dice3-1" >
+						<img src="img/dice-3.png" alt="Dice" class="dice4-1" >
+						<img src="img/block.png" alt="Dice" class="dice5-1" >
+					</div>
+				</div>
+			</div>
+			<div class="game-table row">
+				<div class="game-table-dice col-9">
+					<div class="mainDicePad  row col-10">
+						<div class="myDice  col-2">
+							<input type="image"class="dice1" src="img/dice-1.png" value="0" alt="Dice" />
+						</div>
+						<div class="myDice col-2">
+							<input type="image"class="dice2" src="img/dice-2.png" value="1" alt="Dice" />
+						</div> 
+						<div class="myDice  col-2">
+							<input type="image"class="dice3" src="img/dice-3.png" value="2" alt="Dice" />
+						</div>
+						<div class="myDice col-2 ">
+							<input type="image"class="dice4" src="img/dice-4.png" value="3" alt="Dice" />
+						</div>
+						<div class="myDice col-2 ">
+							<input type="image"class="dice5" src="img/dice-5.png" value="4" alt="Dice" />
+						</div>
+					</div> 
+					
+					<div class="iceDicePad  row ">
+						<div class="iceDicePad1  row ">
+							<div class="diceDs">
+								<input type="image" class="ice1 " src="img/dice-1.png" value= "1">
+							</div>
+							<div class="diceDs">
+								<input type="image" class="ice2 " src="img/dice-2.png" value= "2">
+							</div>
+							<div class="diceDs">	
+								<input type="image" class="ice3 " src="img/dice-3.png" value= "3">
+							</div>
+						</div>
+						<div class="iceDicePad2  row ">	
+							<div class="diceDs">	
+								<input type="image" class="ice4 " src="img/dice-4.png" value= "4">
+							</div>
+							<div class="diceDs">	
+								<input type="image" class="ice5 " src="img/dice-5.png" value= "5">
+							</div>
+							<div class="diceDs">	
+								<input type="image" class="ice6 " src="img/dice-6.png" value= "6">
+							</div>
+						</div>
+					</div>
+									
+					<div class="secondDicePad  row ">
+						<div class="handSet">
+							<img class="winHnd17 " src="img/dice-7.png" alt="Dice" >
+						</div>
+						<div class="handSet">
+							<img class="winHnd27 " src="img/dice-7.png" alt="Dice" >
+						</div>
+						<div class="handSet">	
+							<img class="winHnd37 " src="img/dice-7.png" alt="Dice" >
+						</div>
+						<div class="handSet">	
+							<img class="winHnd47 " src="img/dice-7.png" alt="Dice" >
+						</div>
+						<div class="handSet">	
+							<img class="winHnd57 " src="img/dice-7.png" alt="Dice" >
+						</div>
+					</div>
+				</div> 
+				<div class="utilities col-12">
+					<div class="corePanel row col-6">
+						<div class="myBtn-roll col-6">						
+							<button id="btn-roll" class="btn-roll">Roll Dice</button>
+						</div>		
+						<div class="myBtn-keep  col-6 " >	
+							<button id="btn-keep" class="btn-keep">Keep dice</button>
+						</div>	
+						<div class="myBtn-win col-12">	
+							<button class="btn-win">Show winner </button>
+						</div>
+						<div class="myBtn-init col-2">	
+							<button class="btn-init "> New Game  </button>
+						</div>	
+						<div id="myPrint-win" class="myPrint-win col-10">	
+							<h1 id="print-win">high Straight</h1>
+						</div>
+					</div>
+				</div>
+			</div> 
+			<div class="botPlayers row">
+				<div class="left-Player col-6">
+					<div class="player-pad-2 col-12">
+						<div class="playe" id="name-2"><h2 class="playerLabel-2">Player 3</h2></div>
+						<img src="img/dice-6.png" alt="Dice" class="dice1-2">
+						<img src="img/dice-3.png" alt="Dice" class="dice2-2">
+						<img src="img/dice-4.png" alt="Dice" class="dice3-2">
+						<img src="img/dice-1.png" alt="Dice" class="dice4-2">
+						<img src="img/block.png" alt="Dice" class="dice5-2">
+					</div>
+				</div>                                   
+				<div class="right-Player col-6">
+					<div class="player-pad-3 col-12">          
+						<div class="player-name" id="name-3"><h2 class="playerLabel-3">Player 4</h2></div> 
+						<img src="img/dice-4.png" alt="Dice" class="dice1-3" >
+						<img src="img/dice-6.png" alt="Dice" class="dice2-3" >
+						<img src="img/dice-2.png" alt="Dice" class="dice3-3" >
+						<img src="img/block.png" alt="Dice" class="dice4-3" >
+						<img src="img/block.png" alt="Dice" class="dice5-3" >
+					</div>
+				</div>
+			</div>
+		</div> 
+		<script src="js/dice.js"></script>
+	</body>
+</html>
+
