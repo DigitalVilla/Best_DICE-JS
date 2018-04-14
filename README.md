@@ -1,6 +1,8 @@
 # Dice Game
-An HTML - JS game to get the best "hand" posible in three turns</br>
-Version 2 will implement a responsive design.</br>
-#### Roll Dice to start!</br> 
-### Screen Shot:
+### A JS/HTML game to get the best \"hand\" possible in three turns</br>
+#### Technologies
+JavaScript, HTML , CSS.
+####Version 2
+Will implement a responsive CSS design and a material design UI.</br>
+#### Screen Shot:
 ![Screenshot](screenshot.png)
